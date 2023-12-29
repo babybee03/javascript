@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    position: relative;
+    clear: both;
+    width: 1200px;
+    height: 800px;
+    margin: 0 auto;
+    background: #f00;
+}
+.c1 {
+    position: absolute;
+    left: -300px;
+    top: 0px;
+    width: 200px;
+    height: 800px;
+    transition: all 1s;
+    z-index: 2;
+    background-color: rgba(58, 207, 12, 0.5);
+}
+.c2 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1200px;
+    height: 800px;
+    transition: all 1s;
+    z-index: 1;
+    background-color: #ddd;
+}
+.c3 {
+    position: absolute;
+    left: 1300px;
+    top: 0;
+    width: 200px;
+    height: 800px;
+    transition: all 1s;
+    z-index: 2;
+    background-color: rgba(216, 83, 22, 0.5);
+}
+.c1.open {
+    left: 0px;
+}
+.c3.open {
+    left: 1000px;
+}
