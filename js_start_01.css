@@ -36,14 +36,16 @@
     color: rgb(255, 47, 82);
     font-weight: 700;
     font-size: 15pt;
+    cursor: pointer;
 }
+
 .menubar {
     position: absolute;
     top: 0;
     left: 70px;
     width: 200px;
     height: 600px;
-    
+    cursor: pointer;
 }
 .menubar > div {
     background-color: rgb(238, 67, 96);

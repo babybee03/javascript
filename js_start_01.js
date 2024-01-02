@@ -1,14 +1,15 @@
 var square = document.querySelector(".square");
 var menu = document.querySelector('.menu');
-var number = 0;
-function openTheDoor() {
-    number++;
- if (number % 2 == 0) {
-    menu.classList.remove('open');
- } else {
-    menu.classList.add('open');
- }
+
+function openTheDoor(event) {
+   event.stopPropagation();
+
+   menu.classList.toggle('open');
 }
+
+function closeMenu() {
+   menu.classList.remove('open');
+}
+
 square.addEventListener('click', openTheDoor);
-
-
+document.addEventListener('click', closeMenu);
