@@ -1,68 +1,64 @@
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
+
 .container {
     position: relative;
     clear: both;
-    width: 500px;
-    height: 500px;
-    background-color: rgba(255, 0, 43, 0.5);
-    margin: 50px auto;
+    width: 1000px;
+    height: 600px;
+    background-image: url(ani_slide_img.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0 auto;
+    overflow: hidden;
+     
 }
-.c1 {
+.menu {
+     position: absolute;
+     top: 0;
+     left: 930px;
+     width: 270px;
+     height: 600px;
+     transition: all 1s;
+     
+}
+.square {
     position: absolute;
-    top: -50px;
-    left: -50px;
-    width: 100px;
-    height: 100px;
-    background-color: rgba(252, 195, 203, 0.5);
-    z-index: 2;
-    transition: all 1s;
+    top: 0;
+    left: 0;
+    width: 70px;
+    height: 70px;
+    background-color: pink;
+    text-align: center;
+    line-height: 70px;
+    color: rgb(255, 47, 82);
+    font-weight: 700;
+    font-size: 15pt;
 }
-.c2 {
+.menubar {
     position: absolute;
-    top: -50px;
-    left: 450px;
-    width: 100px;
-    height: 100px;
-    background-color: rgba(253, 118, 141, 0.5);
-    z-index: 2;
-    transition: all 1s;
+    top: 0;
+    left: 70px;
+    width: 200px;
+    height: 600px;
+    
 }
-.c3 {
-    position: absolute;
-    top: 450px;
-    left: -50px;
-    width: 100px;
-    height: 100px;
-    background-color: rgb(253, 14, 41, 0.5);
-    z-index: 2;
-    transition: all 1s;
+.menubar > div {
+    background-color: rgb(238, 67, 96);
+    height: 50px;
+    border: 0.5px solid white;
+    color: rgb(255, 232, 236);
+    font-size: 15pt;
+    line-height: 50px;
+    text-align: center;
+    
+    
 }
-.c4 {
-    position: absolute;
-    top: 450px;
-    left: 450px;
-    width: 100px;
-    height: 100px;
-    background-color: rgba(241, 180, 190, 0.5);
-    z-index: 2;
-    transition: all 1s;
+.menubar > div:hover {
+    background-color: rgb(247, 24, 61);
 }
-.c1.open{
-    top: 200px;
-    left: 200px;
-}
-.c2.open{
-    top: 200px;
-    left: 200px;
-}
-.c3.open{
-    top: 200px;
-    left: 200px;
-}
-.c4.open{
-    top: 200px;
-    left: 200px;
+.menu.open {
+    left: 730px;
 }
