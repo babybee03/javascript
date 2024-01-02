@@ -5,44 +5,64 @@
 .container {
     position: relative;
     clear: both;
-    width: 1200px;
-    height: 800px;
-    margin: 0 auto;
-    background: #f00;
+    width: 500px;
+    height: 500px;
+    background-color: rgba(255, 0, 43, 0.5);
+    margin: 50px auto;
 }
 .c1 {
     position: absolute;
-    left: -300px;
-    top: 0px;
-    width: 200px;
-    height: 800px;
-    transition: all 1s;
+    top: -50px;
+    left: -50px;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(252, 195, 203, 0.5);
     z-index: 2;
-    background-color: rgba(58, 207, 12, 0.5);
+    transition: all 1s;
 }
 .c2 {
     position: absolute;
-    left: 0;
-    top: 0;
-    width: 1200px;
-    height: 800px;
+    top: -50px;
+    left: 450px;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(253, 118, 141, 0.5);
+    z-index: 2;
     transition: all 1s;
-    z-index: 1;
-    background-color: #ddd;
 }
 .c3 {
     position: absolute;
-    left: 1300px;
-    top: 0;
-    width: 200px;
-    height: 800px;
-    transition: all 1s;
+    top: 450px;
+    left: -50px;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(253, 14, 41, 0.5);
     z-index: 2;
-    background-color: rgba(216, 83, 22, 0.5);
+    transition: all 1s;
 }
-.c1.open {
-    left: 0px;
+.c4 {
+    position: absolute;
+    top: 450px;
+    left: 450px;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(241, 180, 190, 0.5);
+    z-index: 2;
+    transition: all 1s;
 }
-.c3.open {
-    left: 1000px;
+.c1.open{
+    top: 200px;
+    left: 200px;
+}
+.c2.open{
+    top: 200px;
+    left: 200px;
+}
+.c3.open{
+    top: 200px;
+    left: 200px;
+}
+.c4.open{
+    top: 200px;
+    left: 200px;
 }
