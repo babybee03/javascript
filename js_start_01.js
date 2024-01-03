@@ -1,22 +1,16 @@
-var tv = new Object();
-   tv.color = "white";
-   tv.price = 300000;
+var arr_01 = ["사당", "교대", "방배", "강남"];
+var arr_02 = ["신사", "압구정", "옥수"];
+var result = arr_01.join("-");
+console.log(result);
 
-   tv.info = function() {
-      document.write("tv 색상: "+this.color, "<br>");
-      document.write("tv 가격: "+this.price, "<br>");
-   }
+result = arr_01.concat(arr_02);
+console.log(result);
 
-var car = {
-   color: "black",
-   price: 5000000,
-   info: function() {
-      document.write("car 색상:" + this.color, "<br>");
-      document.write("car 가격:" + this.price, "<br>");
-   }
-};
+result = arr_01.slice(1, 3);
+console.log(result);
 
-document.write("<h1>tv 메서드 호출</h1>");
-tv.info();
-document.write("<h1>car 메서드 호출</h1>");
-car.info();
+arr_01.sort();
+console.log(arr_01);
+
+arr_02.reverse();
+console.log(arr_02);
