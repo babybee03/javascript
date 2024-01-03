@@ -1,15 +1,22 @@
-var square = document.querySelector(".square");
-var menu = document.querySelector('.menu');
+var tv = new Object();
+   tv.color = "white";
+   tv.price = 300000;
 
-function openTheDoor(event) {
-   event.stopPropagation();
+   tv.info = function() {
+      document.write("tv 색상: "+this.color, "<br>");
+      document.write("tv 가격: "+this.price, "<br>");
+   }
 
-   menu.classList.toggle('open');
-}
+var car = {
+   color: "black",
+   price: 5000000,
+   info: function() {
+      document.write("car 색상:" + this.color, "<br>");
+      document.write("car 가격:" + this.price, "<br>");
+   }
+};
 
-function closeMenu() {
-   menu.classList.remove('open');
-}
-
-square.addEventListener('click', openTheDoor);
-document.addEventListener('click', closeMenu);
+document.write("<h1>tv 메서드 호출</h1>");
+tv.info();
+document.write("<h1>car 메서드 호출</h1>");
+car.info();
