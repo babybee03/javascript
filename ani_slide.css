@@ -10,11 +10,11 @@ body {
 }
 
 .menu {
+    position: absolute;
     right: 0px;
     transition: all 1s;
 }
 .open {
-    position: absolute;
     right: 202px;
 }
 .button {
