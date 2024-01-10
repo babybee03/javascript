@@ -1,0 +1,34 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.all {
+    width: 800px;
+    height: 600px;
+    background-image: url(house.jpg);
+    background-size: cover;
+}
+.open_1 {
+    background-image: url(dessert.jpg);
+}
+
+.open_2 {
+    background-image: url(slide_menu.jpg);
+}
+.bottom {
+    position: absolute;
+    width: 800px;
+    height: 300px;
+    background-color: rgb(182, 182, 182);
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+
+}
+.bottom  img {
+    width: 200px;
+    height: 200px;
+    border-radius: 25px;
+}
