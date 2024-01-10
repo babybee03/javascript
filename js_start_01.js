@@ -1,3 +1,4 @@
+
 var button = document.querySelector(".button");
 var wrap = document.querySelector('.wrap');
 var number = 0;
@@ -10,4 +11,3 @@ button.addEventListener('click', function(){
       wrap.classList.remove('open');
    }
 })
-
