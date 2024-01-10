@@ -1,0 +1,45 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+.background {
+    width: 800px;
+    height: 500px;
+    background-image: url("dessert.jpg");
+    background-size: cover;
+    margin: 0 auto;
+    position: relative;
+    
+
+}
+.wrap {
+    
+}
+.button {
+    position: absolute;
+    right: 0;
+    width: 80px;
+    height: 80px;
+    background-color: rgb(255, 255, 255, 0.5);
+    text-align: center;
+    line-height: 80px;
+}
+.menu {
+    position: absolute;
+    top:0;
+    right: -120px;
+    transition: all 1s;
+}
+.menu > div {
+    background-color: rgba(180, 104, 33, 0.5);
+    width: 120px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-bottom: 1px solid rgba(255, 225, 197, 0.5);
+}
+.open {
+    position: absolute;
+    top: 0px;
+    right: 120px;
+}

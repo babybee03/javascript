@@ -1,8 +1,12 @@
-(function test() {
-   console.log("Hello world");
-   var price = 40000;
-   function pay() {
-      console.log("Paid " + price + " won");
+var button = document.querySelector(".button");
+var wrap = document.querySelector('.wrap');
+var number = 0;
+button.addEventListener('click', function(){
+   number++;
+   if(number % 2 == 1) {
+      wrap.classList.remove('open');
+      wrap.classList.add('open');
+   } else {
+      wrap.classList.remove('open');
    }
-   pay();
-})();
+})
