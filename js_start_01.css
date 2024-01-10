@@ -9,11 +9,10 @@ html, body {
     background-size: cover;
     margin: 0 auto;
     position: relative;
-    
-
+    overflow: hidden;
 }
 .wrap {
-    
+    transition: all 1s;
 }
 .button {
     position: absolute;
@@ -23,13 +22,14 @@ html, body {
     background-color: rgb(255, 255, 255, 0.5);
     text-align: center;
     line-height: 80px;
+    cursor: pointer;
 }
 .menu {
     position: absolute;
     top:0;
     right: -120px;
-    transition: all 1s;
 }
+
 .menu > div {
     background-color: rgba(180, 104, 33, 0.5);
     width: 120px;
@@ -37,9 +37,14 @@ html, body {
     text-align: center;
     line-height: 50px;
     border-bottom: 1px solid rgba(255, 225, 197, 0.5);
+    cursor: pointer;
+}
+.menu > div:hover {
+    background-color: rgba(255, 123, 0, 0.5);
 }
 .open {
     position: absolute;
     top: 0px;
     right: 120px;
+    transition: all 1s;
 }
