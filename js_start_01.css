@@ -1,28 +1,13 @@
-body, html {
-    margin: 0;
-    padding: 0;
-}
-/*
-.pic img {
+.showBox {
     position: absolute;
-    width: 800px;
-    height: 600px;
+    top: 1300px;
+    width: 1000px;
+    opacity: 0;
+    transform: translateY(10%);
+    transition: all 0.5s ease-in-out;
 }
 
-.up {
-    z-index: 4;
-}
-*/
-.all {
-    width: 800px;
-    height: 600px;
-    background-image: url(house.jpg);
-    background-size: cover;
-}
-.open_1 {
-    background-image: url(dessert.jpg);
-}
-
-.open_2 {
-    background-image: url(slide_menu.jpg);
+.showBox.on {
+    opacity: 1;
+    transform: translateY(0);
 }
